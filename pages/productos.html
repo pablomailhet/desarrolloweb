@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <meta name="description" content="RcParts En nuestro catalogo encontraras motores, variadores, helices y mucho mas para armar tu rc">
+    <title>RcParts | Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
@@ -29,37 +32,83 @@
             </div>
         </nav>         
     </header>
-    <main class="container">
-        <section class="row mt-3">
-            <h2>Pellentesque</h2>
-        </section>
-        <section class="row d-flex flex-row justify-content-center">
-            <article class="card widthArticle m-3">
-                <img src="../assets/img/prod1.png" alt="imagen Producto 1" class="card-img-top p-2">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 1</h3>
-                    <p class="card-text">Duis vulputate commodo lectus, ac blandit</p>
-                </div>
-            </article>
-            <article class="card widthArticle m-3">
-                <img src="../assets/img/prod2.png" alt="imagen Producto 2" class="card-img-top p-2">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 2</h3>
-                    <p class="card-text">Pellentesque rhoncus aliquam mattis</p>
-                </div>
-            </article>
-            <article class="card widthArticle m-3">
-                <img src="../assets/img/prod3.png" alt="imagen Producto 3" class="card-img-top p-2">
-                <div class="card-body">
-                    <h3 class="card-title">Producto 3</h3>
-                    <p class="card-text">Quisque nec mauris sit amet elit</p>
-                </div>
-            </article>            
-        </section> 
-    </main>
-    <footer class="container-fluid fixed-bottom justify-content-center">
+
+    <main class="container-fluid mb-5">
+        
+        <section class="mt-3" id="motores">
+            <h2 class="text-center">Motores Brushless</h2>
+            <section class="row d-flex flex-row justify-content-center">
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/motores/f40pro.jpg" alt="imagen de un motor para avion a radio control" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">TM F40pro</h3>
+                        <p class="card-text">Fpv Racing Drone Motor. </p>
+                    </div>
+                </article>
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/motores/its2208.jpg" alt="imagen de un motor para avion a radio control" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">TM Its</h3>
+                        <p class="card-text">Size 2208 2s to 4s</p>
+                    </div>
+                </article>
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/motores/v2207.jpg" alt="imagen de un motor para avion a radio control" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">TM Velox</h3>
+                        <p class="card-text">Size 2207 3s to 4s</p>
+                    </div>
+                </article>                  
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/motores/v3120.jpg" alt="imagen de un motor para avion a radio control" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">TM V3120</h3>
+                        <p class="card-text">Size 3120 4s to 6s</p>
+                    </div>
+                </article>            
+            </section>
+        </section>        
+
+        <section class="mt-3" id="esc">
+            <h2 class="text-center">ESC</h2>
+            <section class="row d-flex flex-row justify-content-center">
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/esc/f35a.jpg" alt="Imagen de un variador de velocidad para motor rc" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">F35A 3-6S</h3>
+                        <p class="card-text">Fast Response, High Efficiency y Less Heat</p>
+                    </div>
+                </article>
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/esc/f55aproII.jpg" alt="Imagen de un variador de velocidad para motor rc" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">F55A PROⅡ 6S 4IN1 </h3>
+                        <p class="card-text">Explosive Power, Fast Response y Prominent Reliability</p>
+                    </div>
+                </article>
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/esc/f66apro.jpg" alt="Imagen de un variador de velocidad para motor rc" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">F66A MINI 6S 4IN1</h3>
+                        <p class="card-text">High Current and High Voltage, all nfet.</p>
+                    </div>
+                </article>
+                <article class="card widthArticleProducto">
+                    <img src="../assets/img/esc/minif45a.jpg" alt="Imagen de un variador de velocidad para motor rc" class="card-img-top p-2">
+                    <div class="card-body">
+                        <h3 class="card-title">MINI F45A 6S 4IN1 </h3>
+                        <p class="card-text">Mini Body, strong performance</p>
+                    </div>
+                </article> 
+            </section>             
+        </section>                
+   
+    </main>    
+    <footer>
         <div class="d-flex justify-content-center">
-            <p>Copyright <span>2024</span></p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a>
+            <a href="https://wa.me/" target="_blank"><i class="bi-whatsapp"></i></a>
         </div>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>            

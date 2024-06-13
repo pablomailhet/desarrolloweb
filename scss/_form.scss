@@ -1,0 +1,30 @@
+.form-label{
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.form-control{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 15px;
+    border-color: $btnBackgroundColor;
+    &:focus{
+        border-color: $btnBackgroundColor;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px silver;
+        outline: 0 none;
+    }
+    &::placeholder{
+        color: #AAAAAA;
+        opacity: 1;
+        font-size: 0.9rem;
+    }
+}
+.btnForm{
+    color: $btnColor;
+    background-color: $btnBackgroundColor;
+    border-radius: 15px;
+    width: 150px;
+    &:hover{
+        color:$btnColorHover;
+        background-color: $btnBackgroundColorHover;
+    }
+}

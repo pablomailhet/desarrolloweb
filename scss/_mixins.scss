@@ -1,0 +1,19 @@
+@mixin h123($color,$fontSize,$fontFamily){
+    color:$color;
+    font-size: $fontSize;
+    font-family:$fontFamily;
+}
+@mixin font($fontFamily,$fontSize){
+    font-family:$fontFamily;
+    font-size: $fontSize;
+}
+@mixin color($color,$backgroundColor){
+    color:$color;
+    background-color:$backgroundColor;
+}
+@mixin flex($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    font-family: $htmlFont;
+    font-size: $htmlFontSize;
+}
+
+header{
+    background: linear-gradient(90deg, $headerBackgroundColorStart 0%, $headerBackgroundColorEnd 100%);
+}
+
+body{
+    background-color:$bodyBackgroundColor;
+}
+
+@for $i from 1 through 3 {
+    h#{$i}{
+        @include h123(nth($hColor, $i), nth($hFontSize, $i), nth($hFont, $i));
+        font-weight: 400;
+    }
+}
+
+p{
+    @include font($pFontFamily, $pFontSize);
+    @include color($pColor,transparent);
+}
+
+a{
+    @include font($aFontFamily, $aFontSize);
+    text-decoration: none;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+
+    transition: filter 0.5s;
+    background: linear-gradient(90deg, nth($footerBackgroundColor,1) 0%, nth($footerBackgroundColor,2) 50%, nth($footerBackgroundColor,3) 100%);
+
+	p{
+		@include color($footerPColor,transparent);
+	}
+    i{
+        padding: 15px;
+        color: black;
+        font-size: 2rem;
+        transition: color 0.5s;
+        @each $propiedad, $valor in $mapColoresRedes{
+            &:hover.bi-#{$propiedad}{
+                @if ($propiedad==instagram){
+                    background: -webkit-linear-gradient(#833ab4,#fd1d1d,#fcb045);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                @else{
+                    color: $valor;
+                }                
+            }
+        }        
+    }
+    &:hover{
+        filter: brightness(110%);
+    }
+}
+
+.imgBordesRedondeados{
+    border-radius: 15px;
+}
+.widthArticleHome{
+    width: 300px;
+    margin: 15px;
+}
+.widthArticleProducto{
+    width: 350px;
+    margin: 15px;
+}
+.imgNosotros{
+    height: 250px;
+}
+.card{
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+    &:hover{
+        box-shadow: 5px 5px 15px gray;
+        img{
+            transform: scale(1.05);
+            filter: brightness(150%);  
+        }
+    }
+    img{
+        transition: transform 0.5s, filter 1s;
+        animation-name: imgOnStart;
+        animation-iteration-count:1;
+        animation-timing-function:linear;
+        animation-duration: 0.5s;
+    }
+}
+@keyframes imgOnStart{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

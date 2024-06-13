@@ -1,0 +1,174 @@
+@media(max-width:991px){
+    .row{
+        text-align: center;
+    }
+    .justify-content-center{
+        align-items: center;
+    }
+    .card{
+        padding-top: 0px !important;
+        margin-bottom: 10px !important;
+        flex-direction: column-reverse;
+    }
+    .widthArticleHome{
+        width: 200px;
+    }
+    .widthArticleProducto{
+        width: 250px;
+    }
+    .card-body{
+        padding: 3px;
+    }
+    .card-title{
+        height: 5px;
+    }
+    .card-text{
+        display:none;
+    }
+    footer{
+        i{
+            padding: 10px;
+            color: black;
+            font-size: 1.5rem;
+        }   
+    } 
+    h2{
+        margin: 0px !important;
+    }
+    .carousel-caption{ 
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }        
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .parrafoNosotros{
+        text-align: left;
+    }
+    .imgNosotros{
+        height: auto;
+        max-width: 90%;
+    }
+    form{
+        .mb-2{
+            margin-bottom: 0px !important;
+        }
+    }
+    .form-control{
+        margin: 0px;
+        margin-bottom: 5px;
+        padding: 3px;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:480px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.8rem !important;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    a{
+        font-size: 0.8rem !important;
+    }    
+    .navbar-brand{
+        width: 140px; 
+        white-space: nowrap !important; 
+        overflow: hidden;
+    }
+    .form-label{
+        font-size: 0.8rem;
+    }
+    .form-control{
+        font-size: 0.8rem;
+    }
+    .btnForm{
+        font-size: 0.8rem;
+    }
+    .widthArticleHome{
+        width: 200px;
+    }
+    .widthArticleProducto{
+        width: auto;
+        max-width: 60%;
+    }    
+    footer{
+        i{
+            padding: 8px;
+            color: black;
+            font-size: 1rem;
+        }   
+    }
+}
+
+@media(max-width:320px){
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        margin: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 00px;
+        font-size: 0.8rem;
+    }
+    h3{
+        font-size: 0.6rem !important;
+    }
+    p{
+        font-size: 0.5rem;
+    }
+    a{
+        font-size: 0.6rem !important;
+    }     
+    .widthArticleHome{
+        width: auto;
+        max-width: 80%;
+    }
+    .widthArticleProducto{
+        width: auto;
+        max-width: 60%;
+    }    
+    .navbar-brand{
+        width: 110px; 
+        white-space: nowrap !important; 
+        overflow: hidden;
+    }
+    .form-label{
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+    .form-control{
+        font-size: 0.6rem;
+    }
+    .btnForm{
+        font-size: 0.6rem;
+        width: 90%;
+    }
+    form{
+        .mb-2{
+            margin-bottom: 5px !important;
+        }
+        .mt-3{
+            margin-top: 10px !important;
+        }
+        .form-control::placeholder{
+            font-size: 0.6rem;
+        }                
+    }
+    .card{
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }    
+}
