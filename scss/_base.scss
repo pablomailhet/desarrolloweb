@@ -27,7 +27,7 @@ body{
 
 p{
     @include font($pFontFamily, $pFontSize);
-    @include color($pColor,transparent);
+    @include color($pColor,$pBackgroundColor);
 }
 
 a{
@@ -45,7 +45,7 @@ footer{
     background: linear-gradient(90deg, nth($footerBackgroundColor,1) 0%, nth($footerBackgroundColor,2) 50%, nth($footerBackgroundColor,3) 100%);
 
 	p{
-		@include color($footerPColor,transparent);
+		@include color($footerPColor,$footerPBackgroundColor);
 	}
     i{
         padding: 15px;
@@ -55,7 +55,7 @@ footer{
         @each $propiedad, $valor in $mapColoresRedes{
             &:hover.bi-#{$propiedad}{
                 @if ($propiedad==instagram){
-                    background: -webkit-linear-gradient(#833ab4,#fd1d1d,#fcb045);
+                    background: -webkit-linear-gradient($valor);
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -86,6 +86,7 @@ footer{
 }
 .card{
     border-radius: 10px;
+    box-shadow: 2px 2px 2px silver;
     transition: box-shadow 0.5s;
     &:hover{
         box-shadow: 5px 5px 15px gray;

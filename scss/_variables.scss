@@ -5,7 +5,9 @@ $headerBackgroundColorEnd:rgba(11,80,94,1);
 $bodyBackgroundColor:white;
 
 $footerBackgroundColor:silver, rgba(215,224,230,1), silver;
-$footerPColor: blue;
+$footerPColor: black;
+$footerPBackgroundColor: transparent;
+
 $footerPSpanColor:rgb(132, 130, 133);
 
 $htmlFont: Impact, sans-serif;
@@ -18,7 +20,7 @@ $hFontSize: 2rem, 1.5rem, 1rem;
 
 $mapColoresRedes:(
     facebook:#3b5998,
-    instagram:#833ab4,
+    instagram:(#833ab4,#fd1d1d,#fcb045),
     whatsapp:green
 );
 

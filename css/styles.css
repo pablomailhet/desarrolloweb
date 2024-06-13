@@ -42,7 +42,7 @@ p {
   font-family: "Open Sans";
   font-size: 0.9rem;
   color: gray;
-  background-color: transparent;
+  background-color: white;
 }
 
 a {
@@ -60,7 +60,7 @@ footer {
   background: linear-gradient(90deg, silver 0%, rgb(215, 224, 230) 50%, silver 100%);
 }
 footer p {
-  color: blue;
+  color: black;
   background-color: transparent;
 }
 footer i {
@@ -104,6 +104,7 @@ footer:hover {
 
 .card {
   border-radius: 10px;
+  box-shadow: 2px 2px 2px silver;
   transition: box-shadow 0.5s;
 }
 .card:hover {
@@ -131,6 +132,9 @@ footer:hover {
 }
 .navbar-brand {
   margin-right: 10px;
+}
+.navbar-brand h1 {
+  margin: 0px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -247,11 +251,10 @@ footer:hover {
     margin-bottom: 10px !important;
     flex-direction: column-reverse;
   }
-  .widthArticleHome {
-    width: 200px;
-  }
-  .widthArticleProducto {
-    width: 250px;
+  .widthArticleHome, .widthArticleProducto {
+    width: auto;
+    max-width: 40%;
+    margin: 10px;
   }
   .card-body {
     padding: 3px;
@@ -265,7 +268,7 @@ footer:hover {
   footer i {
     padding: 10px;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   h2 {
     margin: 0px !important;
@@ -280,9 +283,6 @@ footer:hover {
     height: 30px;
     width: 30px;
   }
-  .parrafoNosotros {
-    text-align: left;
-  }
   .imgNosotros {
     height: auto;
     max-width: 90%;
@@ -295,6 +295,15 @@ footer:hover {
     margin-bottom: 5px;
     padding: 3px;
     padding-left: 10px;
+  }
+  .ps-5 {
+    padding-left: 30px !important;
+  }
+  .pe-5 {
+    padding-right: 30px !important;
+  }
+  .faqVideo {
+    flex-direction: column-reverse !important;
   }
 }
 @media (max-width: 480px) {
@@ -327,18 +336,10 @@ footer:hover {
   .btnForm {
     font-size: 0.8rem;
   }
-  .widthArticleHome {
-    width: auto;
-    max-width: 40%;
-  }
-  .widthArticleProducto {
-    width: auto;
-    max-width: 40%;
-  }
   footer i {
     padding: 8px;
     color: black;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 320px) {
@@ -360,13 +361,8 @@ footer:hover {
   a {
     font-size: 0.6rem !important;
   }
-  .widthArticleHome {
-    width: auto;
-    max-width: 40%;
-  }
-  .widthArticleProducto {
-    width: auto;
-    max-width: 40%;
+  .widthArticleHome, .widthArticleProducto {
+    margin: 5px;
   }
   .navbar-brand {
     width: auto;
@@ -392,10 +388,6 @@ footer:hover {
   }
   form .form-control::placeholder {
     font-size: 0.6rem;
-  }
-  .card {
-    padding-top: 0px;
-    margin-bottom: 0px;
   }
 }
 
