@@ -69,7 +69,7 @@
 
 @media(max-width:480px){
     h1{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     h2{
         font-size: 1rem;
@@ -84,7 +84,7 @@
         font-size: 0.8rem !important;
     }    
     .navbar-brand{
-        width: 140px; 
+        width: auto; 
         white-space: nowrap !important; 
         overflow: hidden;
     }
@@ -98,11 +98,12 @@
         font-size: 0.8rem;
     }
     .widthArticleHome{
-        width: 200px;
+        width: auto;
+        max-width: 40%;
     }
     .widthArticleProducto{
         width: auto;
-        max-width: 60%;
+        max-width: 40%;
     }    
     footer{
         i{
@@ -134,14 +135,14 @@
     }     
     .widthArticleHome{
         width: auto;
-        max-width: 80%;
+        max-width: 40%;
     }
     .widthArticleProducto{
         width: auto;
-        max-width: 60%;
+        max-width: 40%;
     }    
     .navbar-brand{
-        width: 110px; 
+        width: auto; 
         white-space: nowrap !important; 
         overflow: hidden;
     }
@@ -158,7 +159,7 @@
     }
     form{
         .mb-2{
-            margin-bottom: 5px !important;
+            margin-bottom: 0px !important;
         }
         .mt-3{
             margin-top: 10px !important;
