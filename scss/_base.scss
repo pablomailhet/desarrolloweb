@@ -1,59 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
 	margin: 0;
 	padding: 0;
 }
-
 html{
-    font-family: $htmlFont;
     font-size: $htmlFontSize;
 }
-
 header{
-    background: linear-gradient(90deg, $headerBackgroundColorStart 0%, $headerBackgroundColorEnd 100%);
+    background: radial-gradient(circle at 50.3% 44.5%, rgb(116, 147, 179) 0%, rgb(62, 83, 104) 100.2%);
 }
-
 body{
     background-color:$bodyBackgroundColor;
 }
-
 @for $i from 1 through 3 {
     h#{$i}{
         @include h123(nth($hColor, $i), nth($hFontSize, $i), nth($hFont, $i));
         font-weight: 400;
     }
 }
-
 p{
     @include font($pFontFamily, $pFontSize);
     @include color($pColor,$pBackgroundColor);
 }
-
 a{
     @include font($aFontFamily, $aFontSize);
     text-decoration: none;
 }
-
 footer{
     position: fixed;
     left: 0;
     bottom: 0px;
     width: 100%;
-
     transition: filter 0.5s;
-    background: linear-gradient(90deg, nth($footerBackgroundColor,1) 0%, nth($footerBackgroundColor,2) 50%, nth($footerBackgroundColor,3) 100%);
-
-	p{
-		@include color($footerPColor,$footerPBackgroundColor);
-	}
+    background: radial-gradient(circle at 50.3% 44.5%, rgb(221, 221, 221) 0%, rgb(116, 147, 179) 100.2%);    
     i{
         padding: 15px;
-        color: black;
-        font-size: 2rem;
+        color: $footerIColor;
+        font-size: 3rem;
         transition: color 0.5s;
         @each $propiedad, $valor in $mapColoresRedes{
-            &:hover.bi-#{$propiedad}{
+            &:hover.#{$propiedad}{
                 @if ($propiedad==instagram){
                     background: -webkit-linear-gradient($valor);
                     background-clip: text;
@@ -69,27 +55,28 @@ footer{
         filter: brightness(110%);
     }
 }
-
 .imgBordesRedondeados{
-    border-radius: 15px;
-}
-.widthArticleHome{
-    width: 300px;
-    margin: 15px;
-}
-.widthArticleProducto{
-    width: 350px;
-    margin: 15px;
+    border-radius: 25px 25px 0px 25px;
 }
 .imgNosotros{
     height: 250px;
 }
-.card{
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px silver;
+.colPadding{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.tituloCategoria{
+    text-align: center;
+    margin: 0px;
+}
+.cardProducto{
+    width: 300px;
+    margin: 15px;    
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: $cardProductoBoxShadow;
     transition: box-shadow 0.5s;
     &:hover{
-        box-shadow: 5px 5px 15px gray;
+        box-shadow: $cardProductoHoverBoxShadow;
         img{
             transform: scale(1.05);
             filter: brightness(150%);  

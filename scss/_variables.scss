@@ -1,22 +1,10 @@
-$headerBackgroundColor:steelblue;
-$headerBackgroundColorStart:steelblue;
-$headerBackgroundColorEnd:rgba(11,80,94,1);
-
 $bodyBackgroundColor:white;
+$footerIColor: #202020;
+$htmlFontSize: 62.5%;
 
-$footerBackgroundColor:silver, rgba(215,224,230,1), silver;
-$footerPColor: black;
-$footerPBackgroundColor: transparent;
-
-$footerPSpanColor:rgb(132, 130, 133);
-
-$htmlFont: Impact, sans-serif;
-$htmlFontSize: 1rem;
-
-$hColor: white, rgba(11,80,94,1), black;
+$hColor: white, rgba(4, 78, 116), black;
 $hFont: "Roboto", "Roboto", "Open Sans";
-$hFontSize: 2rem, 1.5rem, 1rem;
-
+$hFontSize: 2.6rem, 2rem, 1.4rem;
 
 $mapColoresRedes:(
     facebook:#3b5998,
@@ -25,19 +13,56 @@ $mapColoresRedes:(
 );
 
 $pFontFamily: "Open Sans";
-$pFontSize: 0.9rem;
+$pFontSize: 1.4rem;
 $pColor: gray;
 $pBackgroundColor: white;
 
 $aFontFamily: monospace;
-$aFontSize: 1rem !important;
+$aFontSize: 1rem;
 
+$navLinkFontSize: 1.5rem;
+$navLinkFontFamily: "Open Sans";
 $navLinkColor: #F0F0F0;
-$navLinkColorHover: white;
+$navLinkHoverColor: white;
 $navLinkActiveBackgroundColor: transparent;
+$navBarTogglerColor: white;
+$navBarTogglerBorderColor: white;
+$navBarTogglerIconColor: rgba(255,255,255,1); 
 
-$btnColor: silver;
-$btnBackgroundColor: rgba(11,80,94,1);
+$formControlBorderColor: rgba(62, 83, 104,1);
+$formControlFocusBorderColor: rgba(11,80,94,1);
+$formControlFocusBoxShadow: 0 2px 2px rgba(0, 0, 0, 0.075) inset, 0 0 10px silver;
+$formControlPlaceHolderColor: #AAAAAA;
 
-$btnColorHover: white;
-$btnBackgroundColorHover: rgba(11,80,94,1);
+$formButtonColor: rgba(11,80,94,1);
+$formButtonBackgroundColor: white;
+$formButtonBorderColor: rgba(62, 83, 104,1);
+
+$formButtonHoverColor: white;
+$formButtonHoverBackgroundColor: rgba(62, 83, 104,1);
+$formButtonHoverBorderColor: rgba(62, 83, 104,1);
+
+$formLabelColor: rgb(50,50,50);
+
+$formLabelFontSize: 1.6rem;
+$formControlFontSize: 1.4rem;
+$formButtonFontSize: 1.8rem;
+
+$formLabelFontFamily: "Open Sans";
+$formControlFontFamily: "Open Sans";
+$formButtonFontFamily: "Open Sans";
+
+$carouselCaptionH3FontSize: 3rem;
+$carouselCaptionH3FontFamily: "Open Sans";
+$carouselCaptionH3Color: white;
+$carouselCaptionH3BackgroundColor: transparent;
+$carouselCaptionH3TextShadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+$carouselCaptionPFontSize: 2rem;
+$carouselCaptionPFontFamily: "monospace";
+$carouselCaptionPColor: white;
+$carouselCaptionPBackgroundColor: transparent;
+$carouselCaptionPTextShadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+$cardProductoBoxShadow: 2px 2px 2px silver;
+$cardProductoHoverBoxShadow: 5px 5px 15px gray;
